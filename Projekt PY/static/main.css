@@ -1,45 +1,62 @@
 nav{
-    border-radius: 40px;
+    border-radius: 0px;
 }
 .navbar-nav .nav-link {
-    font-size: 30px;
-    font-family: 'Verdana', sans-serif;
-    padding: 15px 60px;
-    line-height: 15px;
+    font-size: 35px;
+    font-family: 'Courier New', sans-serif;
+    font-weight: bold;
+    padding: 0px 80px;
+    line-height: 30px;
     text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    float: left;
+
 }
 .site-header .navbar-nav .nav-link {
-    color: #64f364;
+    color: #333f0c 54% 44%;
 }
 
 .site-header {
-    height: 50px;
-    padding: 20px 0;
-    width: 70%;
-    margin: 0 auto;
+    height: 60px;
+    padding: 20px 0px;
+    width: 110%;
+    margin: 0;
 }
 
 .bg-steel {
-    background-color: #103d06;
+    background-color: #737A5D;
 }
 
 body {
-    background: #aff59c;
+    background: #ececdc;
     color: #000000;
     margin-top: 0pt;
+}
+h1 {
+    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: none;
+    color: #093d0d;
+    text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .article-title {
     color: #000000;
 }
 
-a.article-title:hover {
-    color: #428bca;
+.article-title:hover {
+    color: #000000;
     text-decoration: none;
 }
 
 .article-content {
-    white-space: pre-line;
+    white-space:pre-line;
 }
 
 .article-img {
@@ -55,7 +72,7 @@ a.article-title:hover {
 }
 
 .article-metadata a:hover {
-    color: #333;
+    color: #000000;
     text-decoration: none;
 }
 
