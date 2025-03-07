@@ -1,4 +1,9 @@
+* {
+    margin: 0;
+  }
 nav{
+    position: sticky;
+    top: 0;
     border-radius: 0px;
 }
 .navbar-nav .nav-link {
@@ -6,13 +11,14 @@ nav{
     font-family: 'Courier New', sans-serif;
     font-weight: bold;
     padding: 0px 80px;
-    line-height: 30px;
+    line-height: 50px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     float: left;
 
 }
+
 .site-header .navbar-nav .nav-link {
     color: #333f0c 54% 44%;
 }
@@ -20,7 +26,7 @@ nav{
 .site-header {
     height: 60px;
     padding: 20px 0px;
-    width: 110%;
+    width: 100%;
     margin: 0;
 }
 
@@ -29,9 +35,9 @@ nav{
 }
 
 body {
-    background: #ececdc;
+    background: #f7f7eb;
     color: #000000;
-    margin-top: 0pt;
+    margin-left: 0pt;
 }
 h1 {
     font-family: 'Courier New', sans-serif;
@@ -45,6 +51,31 @@ h1 {
     text-decoration: none;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
+h2 {    
+    font-family: 'Courier New', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: none;
+    color: #093d0d;
+    text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+  .my-container, .my-container2 {
+    background-color: #dbdbce;
+    padding: 20px; 
+    border: 2px solid #dabfbf;
+    width: 900px; 
+    margin: 40px; 
+  }
+
 
 .article-title {
     color: #000000;
@@ -56,6 +87,7 @@ h1 {
 }
 
 .article-content {
+    margin-left: 20px;
     white-space:pre-line;
 }
 
