@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mājaslapa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <nav class="site-header bg-steel">
+        <ul class="navbar-nav">
+            <li><a class="nav-link" href="/">Mājaslapa</a></li>
+            <li><a class="nav-link" href="/page2">Mūsu dzīvnieki</a></li>
+            <li><a class="nav-link" href="/panemtdzivnieku">Paņemt dzīvnieku</a></li>
+            <li><a class="nav-link" href="<div class="navbar"><div class="dropdown"><button class="dropbtn">Kā mums palīdzēt?
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="/ziedosana">Ziedošana</a>
+                <a href="/klutparpartneri">Kļūt par dalībnieku</a>
+              </div>
+              <li><img src="{{ url_for('static', filename = 'PAW_Logo.png') }}" alt="AnimalCare" width="70" height="70"></li>
+            </div>
+          </div></a></li></div></a>
+                
+                  
+        </ul>
+    </nav>
+    <main>
+        <br>
+        <h1>Kas ir nepieciešams, lai pieņemtu dzīvnieku?</h1>
+        <br>
+        <p><h2>Lai kļūtu par aprūpētāju, nepieciešams iesniegt sekojošus dokumentus un nodrošināt finansiālu atbalstu:</h2></p>
+        <hr>
+       <ul>
+         <li> <h3>Personas apliecinošs dokuments (pase, vadītāja apliecība)</h3> </li>
+         <li> <h3>Reģistrācijas apliecība par dzīvesvietu</h3> </li>
+         <li> <h3>Ienākumu apliecinājums vai citi dokumenti, kas apliecina finansiālo nodrošinājumu</h3> </li>
+         <li> <h3>Medicīniskie dokumenti (ja nepieciešams)</h3> </li>
+       </ul>
+       <br>
+       <h1>Mūsu kontaktinformācija:</h1>
+     <div class="container">
+        <div class="my-container">
+            <p><h2>Tālrunis: +37167293819</h2></p>
+            <p><h2>E-pasts: animalcare@gmail.lv</h2></p>
+            <p><h2>Adrese: Jaunā iela 1</h2></p>
+
+        </div>
+     </div>
+     <div class="container3">
+      <div class="my-container3">
+        <img src="{{ url_for('static', filename='cat-silhouette-black.png') }}" width="450" height="450">
+        </div>
+        <div class="my-container32">
+          <img src="{{ url_for('static', filename='cat_PNG50522.png') }}" width="450" height="450">
+          </div>
+     </div>   
+    </main>
+  </body>
+</html>        
