@@ -7,17 +7,41 @@ nav{
     border-radius: 0px;
 }
 .navbar-nav .nav-link {
-    font-size: 35px;
-    font-family: 'Courier New', sans-serif;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
-    padding: 0px 80px;
-    line-height: 50px;
+    padding: 0px 10px;
+    line-height: 55px;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     float: left;
+    
 
 }
+.dropdown .dropbtn {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0; 
+    line-height: 30px;
+  }
+
+nav ul {
+    list-style: none !important;
+    padding-left: 20px;
+  }
+  
+  li {
+    display: list-item !important;
+    margin-right: 10px;
+  }
 
 .site-header .navbar-nav .nav-link {
     color: #333f0c 54% 44%;
@@ -31,16 +55,46 @@ nav{
 }
 
 .bg-steel {
-    background-color: #737A5D;
+    background-color: #008247;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #008247;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    margin-left: 790px;
+    margin-top: 60px;
+    width: 350px;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(0, 101, 57);
+  }
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
 body {
-    background: #f7f7eb;
+    background: #f0fff7;
     color: #000000;
     margin-left: 0pt;
 }
 h1 {
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 30px;
     font-weight: bold;
     text-transform: none;
@@ -49,10 +103,11 @@ h1 {
     line-height: 1.4;
     letter-spacing: 0px;
     text-decoration: none;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 h2 {    
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-transform: none;
@@ -61,8 +116,29 @@ h2 {
     line-height: 1.4;
     letter-spacing: 0px;
     text-decoration: none;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    margin-right: 30px;
 }
+h3 {    
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: none;
+    color: #093d0d;
+    text-align: justify;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+button {
+    margin-left: 70px;
+}
+
+#myImage {
+    margin-top: 1000;
+    margin-left: 1000;
+}
+
 .container {
     display: flex;
     gap: 10px;
@@ -74,6 +150,47 @@ h2 {
     border: 2px solid #dabfbf;
     width: 900px; 
     margin: 40px; 
+  }
+
+  .newcontainer {
+    display: flex;
+    gap: 0px;
+}
+
+  .new-container, .new-container2 {
+    background-color: #eaefe9;
+    padding: 20px; 
+    border: 2px solid #dabfbf;
+    width: 500px; 
+    height: 600px;
+    margin: 40px; 
+  }
+
+  .Ncontainer {
+    display: flex;
+    gap: 0px;
+}
+
+  .N-container, .N-container2 {
+    background-color: #eaefe9;
+    padding: 20px; 
+    border: 2px solid #dabfbf;
+    width: 300px; 
+    height: 300px;
+    margin: 40px; 
+  }
+.container3{
+  display: flex;
+    gap: 600px;
+}
+
+  .my-container3 {
+    background-color: #f0fff7;
+    padding: 20px; 
+    border: none;
+    width: 300px; 
+    height: 300px;
+    margin-left: 1000px; 
   }
 
 
@@ -113,11 +230,14 @@ h2 {
     height: 25px;
     vertical-align: middle;
 }
-ul {
-    list-style: none;
+
+
+main ul {
+    list-style: disc !important;
+    padding-left: 20px;
   }
   
   li {
-    display: inline-block;
-    margin-right: 10px;
+    display: list-item !important;
+    margin-left: 30px;
   }
