@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 </head>
 <body>
-  <nav class="site-header bg-steel">
+
+    <nav class="site-header bg-steel">
         <ul class="navbar-nav">
             <li><a class="nav-link" href="/">Mājaslapa</a></li>
             <li><a class="nav-link" href="/page2">Mūsu dzīvnieki</a></li>
@@ -19,22 +20,45 @@
                 <a href="/ziedosana">Ziedošana</a>
                 <a href="/klutparpartneri">Kļūt par dalībnieku</a>
               </div>
-              <li><img src="{{ url_for('static', filename = 'PAW_Logo.png') }}" alt="AnimalCare" width="70" height="70"></li>
+            <li><img src="{{ url_for('static', filename = 'PAW_Logo.png') }}" alt="AnimalCare" width="70" height="70"></li>
             </div>
           </div></a></li></div></a>
                 
+                  
         </ul>
+    </nav>
     <main>
       <div class="container">
         <div class="my-container">
             <p><h1>Dzīvnieku patversme AnimalCare</h1></p>
-            <p><h2>Pieņemam apmeklētājus katru dienu no 9:00 līdz 18:00.</h2></p>
+            <br>
+            <p><h2>Pieņemam apmeklētājus katru dienu:</h2></p>
+            <br>
+            <br>
+             <div class="container4">
+              <p><h2>Pirmdiena- 9:00 līdz 18:00</h2></p>
+              <p><h2>Otrdiena- 9:00 līdz 18:00</h2></p>
+              <p><h2>Trešdiena- 9:00 līdz 18:00</h2></p>
+              <p><h2>Ceturtdiena- 9:00 līdz 18:00</h2></p>
+              <p><h2>Piektdiena- 10:00 līdz 16:00</h2></p>
+              <p><h2>Sestdiena- 10:00 līdz 16:00</h2></p>
+              <p><h2>Svētdiena- 12:00 līdz 16:00</h2></p>
+            </div> 
           </div>
           <div class="my-container2">
             <p><h1>Mūsu dzīvnieki</h1></p>
-            <p><h2>"Grafiks"</h2></p>
+            <br>
+    
+            <div class="chartdiv">
+              <iframe src="{{ url_for('static', filename='animal_type_distribution.html') }}" width="500" height="400"></iframe>
+          </div>
           </div>
          </div> 
+         
+    </main>
+
+</body>
+</html>
     </main>
 
 </body>
