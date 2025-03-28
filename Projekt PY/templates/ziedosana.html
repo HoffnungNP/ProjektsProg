@@ -28,10 +28,16 @@
 
     <main>
         <h1>Ar ko palīdzēt patversmei?</h1>
-        <div class="Ncontainer">
-            <div class="N-container">
-
+        <div class="container">
+            <div class="my-container">
+                <h1>Ja ir vēlme palīdzēt dzīvniekiem un patversmei, katram ir iespēja ziedot mantas, piemēram, segas, rotaļlietas, bļodiņas un tam līdzīgo, kā arī finansiāli atbalstīt patversmi. Var gan kā ziedot kopumā, gan arī konkrētam nolūkam, ko minēsiet vēstulē vai klātienē.</h1>
             </div>
+            <div class="my-container2">
+              <img src="{{ url_for('static', filename='donations_chart.png') }}" alt="Donations Chart">
+            </div>
+            <a href="/zied.csv">
+              <button>Download CSV</button>
+          </a>
         </div>        
           
     </main>
