@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page2</title>
+    <title>Mūsu dzīvnieki</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 </head>
 <body>
-     <nav class="site-header bg-steel">
+    <nav class="site-header bg-steel">
         <ul class="navbar-nav">
             <li><a class="nav-link" href="/">Mājaslapa</a></li>
             <li><a class="nav-link" href="/page2">Mūsu dzīvnieki</a></li>
@@ -22,12 +22,43 @@
               <li><img src="{{ url_for('static', filename = 'PAW_Logo.png') }}" alt="AnimalCare" width="70" height="70"></li>
             </div>
           </div></a></li></div></a>
-                
+                  
         </ul>
+    </nav>
 
     <main>
-        <h1>Page2</h1>
-        <p><h2>Info?</h2></p>
+        <h1>Viņi tevi gaida!</h1>
+      <div class="container5"> 
+        <div class="Ncontainer">
+            <div class="N-container">
+                <a href="cat1"><img src="{{ url_for('static', filename='cat1_02-1813x1811-720x719.jpg') }}" alt="Muris" width="250" height="250"></a>
+                <p><h2>Muris, 3 gadi</h2></p>
+            </div>
+            <div class="N-container2">
+                <a href="cat2"><img src="{{ url_for('static', filename='cat2.jpg') }}" alt="Laila" width="300" height="250"></a>
+                <p><h2>Laila, 1 gads</h2></p>
+            </div>
+            <div class="N-container">
+                <a href="dog1"><img src="{{ url_for('static', filename='dog1.jpg') }}" alt="Taksis" width="250" height="250"></a>
+                <p><h2>Taksis, 5 gadi</h2></p>
+            </div>
+        </div>     
+        <div class="N2container">
+            <div class="N2-container1">
+                <a href="guineapig"><img src="{{ url_for('static', filename='guineapig.jpg') }}" alt="Tomatiņš" width="300" height="250"></a>
+                <p><h2>Tomatiņš, 1 gads</h2></p>
+            </div>
+            <div class="N2-container2">
+                <a href="dog2"><img src="{{ url_for('static', filename='dog2.jpg') }}" alt="Reksis" width="300" height="250"></a>
+                <p><h2>Reksis, 4 gadi</h2></p>
+            </div>
+            <div class="N2-container2">
+                <a href="rabbit"><img src="{{ url_for('static', filename='rabbit.jpg') }}" alt="Puķītis" width="300" height="250"></a>
+                <p><h2>Puķītis, 2 gadi</h2></p>
+            </div>      
+            
+        </div>
+    </div>
     </main>
  </body>
  </html>
